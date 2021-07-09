@@ -24,6 +24,4 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: sample_production
-  username: sample
-  password: <%= ENV['SAMPLE_DATABASE_PASSWORD'] %>
+  url: <%= ENV[DATABASE-URL]%>
